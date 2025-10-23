@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Boston House Price Prediction</title>
+</head>
+<body>
+  <h1>Boston House Price Prediction</h1>
+  <form action="/predict" method="post">
+    <label>CRIM (per capita crime rate):</label><br>
+    <input type="number" step="any" name="CRIM" required><br><br>
+
+    <label>ZN (residential land zoned proportion):</label><br>
+    <input type="number" step="any" name="ZN" required><br><br>
+
+    <label>INDUS (non-retail business acres):</label><br>
+    <input type="number" step="any" name="INDUS" required><br><br>
+
+    <label>CHAS (Charles River dummy variable 0 or 1):</label><br>
+    <input type="number" step="1" name="CHAS" required><br><br>
+
+    <label>NOX (nitric oxides concentration):</label><br>
+    <input type="number" step="any" name="NOX" required><br><br>
+
+    <label>RM (average number of rooms):</label><br>
+    <input type="number" step="any" name="RM" required><br><br>
+
+    <label>AGE (proportion of owner-occupied units built before 1940):</label><br>
+    <input type="number" step="any" name="AGE" required><br><br>
+
+    <label>DIS (weighted distances to employment centers):</label><br>
+    <input type="number" step="any" name="DIS" required><br><br>
+
+    <label>RAD (index of accessibility to highways):</label><br>
+    <input type="number" step="any" name="RAD" required><br><br>
+
+    <label>TAX (property-tax rate):</label><br>
+    <input type="number" step="any" name="TAX" required><br><br>
+
+    <label>PTRATIO (pupil-teacher ratio):</label><br>
+    <input type="number" step="any" name="PTRATIO" required><br><br>
+
+    <label>B (1000(Bk - 0.63)^2):</label><br>
+    <input type="number" step="any" name="B" required><br><br>
+
+    <label>LSTAT (% lower status population):</label><br>
+    <input type="number" step="any" name="LSTAT" required><br><br>
+
+    <button type="submit">Predict Price</button>
+  </form>
+</body>
+</html>
