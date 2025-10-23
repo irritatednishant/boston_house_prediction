@@ -5,7 +5,7 @@
 </head>
 <body>
   <h1>Boston House Price Prediction</h1>
-  <form action="/predict" method="post">
+  <form action="{{url_for('predict')}}" method="post">
     <label>CRIM (per capita crime rate):</label><br>
     <input type="number" step="any" name="CRIM" required><br><br>
 
@@ -47,5 +47,8 @@
 
     <button type="submit">Predict Price</button>
   </form>
-</body>
+  <br><br>
+
+  {{prediction_text}}
+</body> 
 </html>
